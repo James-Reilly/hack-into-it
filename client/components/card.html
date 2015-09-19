@@ -1,0 +1,21 @@
+<template name="card">
+  <div class="card shadow">
+    <div class="row">
+
+      <div class="col-xs-10 col-sm-10 col-md-11">
+        <h4><b>{{faq.subject}}</b></h4>
+        <h4>{{{faq.details}}}</h4>
+        <p>{{{faq.response}}}</p>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-1">
+        <div style="width:100%; text-align:right;">
+          <span faqId="{{faq._id}}" class="glyphicon glyphicon-thumbs-up thumbs-icon" aria-hidden="true"></span>
+        </div>
+        <div style="width:100%; text-align:right; min-height:20px; margin-top:10px;">
+          <span faqId="{{faq._id}}" class="glyphicon glyphicon-thumbs-down thumbs-icon" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</template>

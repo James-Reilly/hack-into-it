@@ -1,0 +1,15 @@
+<template name="welcome">
+  <div class="jumbotron vertical-center">
+    <div class="container" style="text-align:center; color:white;">
+      <h2>What's going on in your life?</h2>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <button id="marriage" type="button" class="btn btn-landing btn-lg fade-in one">I'm getting married!</button>
+          <button id="baby" type="button" class="btn btn-landing btn-lg fade-in two">I'm having a baby!</button>
+          <button id="home" type="button" class="btn btn-landing btn-lg fade-in three">I'm buying my first home!</button>
+          <a href="{{pathFor 'list'}}" id="continue" type="button" style="visibility:{{continue}}" class="btn btn-landing btn-lg fade-in">Continue</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

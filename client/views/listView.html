@@ -1,0 +1,14 @@
+<template name="listView">
+  <a id="back" href="{{pathFor 'main'}}"><span class="glyphicon glyphicon-chevron-left pull-left back-arrow" aria-hidden="true">Back</span></a>
+  <h2 style=" margin-top:15px;color:white; text-align:center;">Here are some frequently asked questions that should help you</h2>
+  <div class="jumbotron">
+    <div class="vertical-center">
+      <div class="container">
+
+        {{#each faqs}}
+          {{> card faq=this}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</template>
